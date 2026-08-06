@@ -69,7 +69,6 @@ RUN chmod +x /root/.vnc/xstartup
 RUN cat > /usr/local/bin/start-vnc.sh <<'EOF'
 #!/bin/bash
 set -e
-
 # 启动 VNC :1，对应 5901 端口
 vncserver :1 \
   -localhost no \
